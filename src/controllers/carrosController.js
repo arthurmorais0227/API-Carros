@@ -143,16 +143,19 @@ const filtrarCarros = (req, res) => {
     if (qtdeVitorias) {
       resultado = resultado.filter(c => c.qtdeVitorias.toLowerCase().includes(qtdeVitorias.toLowerCase()));
     }
+
     if (velocidadeMaxima) {
       resultado = resultado.filter(c => c.velocidadeMaxima.toLowerCase().includes(velocidadeMaxima.toLowerCase()));
     }
-    if (equipe) {
+
+     if (equipe) {
       resultado = resultado.filter(c => c.equipe.toLowerCase().includes(equipe.toLowerCase()));
     }
-    if (tipo) {
+
+     if (tipo) {
       resultado = resultado.filter(c => c.tipo.toLowerCase().includes(tipo.toLowerCase()));
     }
-
+    
     res.status(200).json({
         total: resultado.length,
         data: resultado
