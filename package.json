@@ -1,0 +1,22 @@
+{
+  "name": "api-carros",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cls && nodemon server.js"
+  },
+  "keywords": [
+    "Backend",
+    "Carros",
+    "API"
+  ],
+  "author": "Arthur Morais",
+  "license": "MIT",
+  "description": "CRUD completo com tema de Carros",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
