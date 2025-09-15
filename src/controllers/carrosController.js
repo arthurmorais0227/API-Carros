@@ -120,7 +120,7 @@ res.status(200).json({
 });
 }
 
-const filtrarCarros = (req, res) => {
+const getFiltrarAllCarros = (req, res) => {
     
     const { nome, modelo, ano, cor, qtdeVitorias, velocidadeMaxima, equipe, tipo } = req.query
     let resultado = carros;
@@ -162,4 +162,4 @@ const filtrarCarros = (req, res) => {
     });
 }
 
-export { getCarrosByid, createCarro, deleteCarro, updateCarro, filtrarCarros };
+export { getCarrosByid, createCarro, deleteCarro, updateCarro, getFiltrarAllCarros };
