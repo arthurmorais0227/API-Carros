@@ -12,7 +12,7 @@ const getCarrosByid = (req, res) => {
         res.status(200).json(carro);
     } else {
         res.status(404).json({
-            erro: `Barbie com id ${id} não encontrado`,
+            erro: `Carro com id ${id} não encontrado`,
         });
     }
 };
